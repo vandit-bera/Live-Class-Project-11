@@ -1,0 +1,609 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,800;1,600;1,700&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --text-white-color: #fff;
+    --blue-bg: #068ff1;
+    --black-color-gray: #515151;
+    --button-gradient: linear-gradient(#08b8f7 0%, #0573ec 100%);
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+.wrapper {
+    width: 100%;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+nav {
+    padding: 32px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.brandLogo img {
+    height: 40px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    padding: 0 24px;
+    transition: 0.3s;
+    font-weight: 500;
+}
+
+nav ul li:hover a {
+    color: #000;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--black-color-gray);
+}
+
+nav ul li.menu {
+    font-size: 24px;
+    color: var(--text-white-color);
+    display: none;
+}
+
+nav ul button {
+    padding: 12px 24px;
+    background-color: var(--text-white-color);
+    border: 1px solid var(--blue-bg);
+    color: var(--blue-bg);
+    font-weight: 600;
+    margin-left: 32px;
+    font-size: 16px;
+    border-radius: 10px;
+}
+
+.imageWithTextSection {
+    width: 100%;
+}
+
+.imageWithTextBox {
+    width: 100%;
+}
+
+.imageWithTextBox .marginBox {
+    display: flex;
+    flex-direction: row-reverse;
+    /* flex-wrap: wrap; */
+    align-items: center;
+}
+
+.imageWithTextBox .marginBox .imageBox,
+.imageWithTextBox .marginBox .contentBox {
+    width: 50%;
+}
+
+.imageWithTextBox .marginBox.specialBox {
+    flex-direction: row;
+}
+
+.imageWithTextBox .marginBox .imageBox img {
+    padding: 20px 50px;
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+}
+
+.imageWithTextBox .marginBox .contentBox h2 {
+    font-size: 56px;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+.imageWithTextBox .marginBox .contentBox p {
+    padding: 12px 0;
+    color: var(--black-color-gray);
+}
+
+.imageWithTextBox .marginBox .contentBox button {
+    margin-top: 20px;
+    padding: 12px 24px;
+    background: var(--button-gradient);
+    border: none;
+    border-radius: 8px;
+    color: var(--text-white-color);
+    outline: none;
+    font-size: 16px;
+}
+
+.ourServicesSection {
+    width: 100%;
+    padding: 50px 0;
+}
+
+.ourServiceHead p {
+    width: 50%;
+    color: var(--black-color-gray);
+}
+
+.ourServiceHead {
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ourServiceHead h2 {
+    width: 40%;
+    font-size: 44px;
+    font-weight: 600;
+}
+
+.ourServicesSection .mainBox {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.ourServicesSection .mainBox .servicesBoxes {
+    width: 33.33%;
+    margin-bottom: 24px;
+}
+
+.ourServicesSection .mainBox .servicesBoxes h2 {
+    font-weight: 600;
+    padding: 12px 0;
+}
+
+.ourServicesSection .mainBox .servicesBoxes p {
+    color: var(--black-color-gray);
+    padding-right: 20px;
+    width: 80%;
+}
+
+.pricingSection {
+    background-color: var(--blue-bg);
+    padding: 50px 0;
+}
+
+.pricingSection>h2 {
+    font-size: 44px;
+    text-align: center;
+    color: var(--text-white-color);
+    font-weight: 600;
+}
+
+.priceBoxSection {
+    padding-top: 30px;
+}
+
+.priceBoxSection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.priceBoxSection .priceBox {
+    margin: 20px 0;
+    width: 33.33%;
+}
+
+.priceBoxSection .priceBox .priceMarginBox {
+    margin: 0 20px;
+    background-color: var(--text-white-color);
+    border-radius: 10px;
+}
+
+.priceBox .priceMarginBox .priceHead h2 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.priceBox .priceMarginBox .priceHead,
+.priceBox .priceMarginBox ul {
+    padding: 20px;
+}
+
+.priceBox .priceMarginBox .priceHead {
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.priceBox .priceMarginBox:hover .priceHead {
+    background-color: #000000;
+    color: var(--text-white-color);
+}
+
+.priceBox .priceMarginBox:hover .priceHead p {
+    color: var(--text-white-color);
+}
+
+.priceBox .priceMarginBox .priceHead p {
+    padding-top: 12px;
+    color: var(--black-color-gray);
+}
+
+.priceBox .priceMarginBox ul {
+    list-style-type: none;
+    padding: 50px 20px;
+}
+
+.priceBox .priceMarginBox ul li {
+    padding: 8px 0 8px 30px;
+    position: relative;
+    font-weight: 500;
+    position: relative;
+}
+
+.priceBox .priceMarginBox ul li:before {
+    position: absolute;
+    content: "\f058";
+    font-family: "Font Awesome 5 Free";
+    left: 0%;
+    top: 50%;
+    transform: translateY(-50%);
+    color: green;
+}
+
+.selectPlanSection {
+    padding: 0 20px;
+    text-align: center;
+}
+
+.selectPlanSection h2 {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.selectPlanSection h2 span {
+    color: gray;
+}
+
+.selectPlanSection h4 {
+    font-size: 14px;
+    font-weight: 500;
+    padding: 10px 0;
+    color: var(--black-color-gray);
+}
+
+.selectPlanSection button {
+    margin: 20px 0;
+    padding: 12px 24px;
+    background: var(--text-white-color);
+    border-radius: 8px;
+    color: var(--blue-bg);
+    border: 2px solid var(--blue-bg);
+    outline: none;
+    font-weight: 600;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.priceBox .priceMarginBox:hover .selectPlanSection button {
+    background: var(--button-gradient);
+    color: var(--text-white-color);
+    border: 2px solid white;
+}
+
+.customerFeedBackSection {
+    padding: 100px 0;
+}
+
+.customerFeedBackSection .heading {
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.customerFeedBackSection .heading h2 {
+    font-size: 32px;
+    padding: 20px 0;
+    font-weight: 700;
+}
+
+.customerFeedBackSection .heading p {
+    width: 80%;
+    margin: 0 auto;
+    color: var(--black-color-gray);
+}
+
+.mainFeedBackBox {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.mainFeedBackBox .boxes {
+    width: 50%;
+}
+
+.mainFeedBackBox .boxes .marginBox {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+}
+
+.mainFeedBackBox .boxes .marginBox .description {
+    color: var(--black-color-gray);
+}
+
+.mainFeedBackBox .boxes .marginBox .bio {
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.mainFeedBackBox .boxes .marginBox .bio img {
+    height: 80px;
+}
+
+.boxes .marginBox .bio .rightBox {
+    margin-left: 10px;
+}
+
+.boxes .marginBox .bio .rightBox h2 {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.boxes .marginBox .bio .rightBox h4 {
+    color: gray;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.highLightSection {
+    width: 100%;
+    background-color: var(--blue-bg);
+    padding: 100px 0;
+    position: relative;
+}
+
+.highLightSection .leftBox h2 {
+    width: 50%;
+    color: var(--text-white-color);
+    font-size: 44px;
+}
+
+.highLightSection .leftBox p {
+    padding: 20px 0;
+    color: var(--text-white-color);
+    width: 50%;
+}
+
+.highLightSection .rightBox {
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.highLightSection .rightBox button {
+    margin: 20px 0;
+    padding: 12px 24px;
+    background-color: transparent;
+    border-radius: 8px;
+    color: var(--text-white-color);
+    border: 1px solid var(--text-white-color);
+    outline: none;
+    font-weight: 600;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.footerLogo img {
+    height: 40px;
+    padding-bottom: 20px;
+}
+
+.footerLogo p {
+    color: var(--black-color-gray);
+}
+
+.socialLinks {
+    width: 20%;
+    text-align: center;
+}
+
+.socialLinks h2 {
+    font-weight: 600;
+}
+
+.footerLogo {
+    width: 30%;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 80px 0;
+}
+
+.middleBox {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.middleBox ul {
+    list-style-type: none;
+}
+
+.middleBox ul h2 {
+    font-weight: 600;
+    font-size: 18px;
+    padding-bottom: 10px;
+}
+
+.middleBox ul li {
+    padding-bottom: 10px;
+    color: var(--black-color-gray);
+}
+
+
+/* Responsive  */
+
+@media only screen and (max-width: 1240px) {
+    nav ul li,
+    nav ul button {
+        display: none;
+    }
+    nav ul li.menu {
+        display: block;
+        color: var(--black-color-gray);
+    }
+    .imageWithTextBox .marginBox .contentBox h2 {
+        font-size: 36px;
+    }
+    .ourServiceHead h2 {
+        width: 50%;
+    }
+    .priceBoxSection .priceBox {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .imageWithTextBox .marginBox {
+        flex-wrap: wrap;
+    }
+    .imageWithTextBox .marginBox .contentBox h2 {
+        font-size: 24px;
+    }
+    .imageWithTextBox .marginBox .contentBox p {
+        font-size: 16px;
+    }
+    .ourServiceHead {
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    .ourServiceHead h2 {
+        width: 100%;
+        line-height: 1.3;
+        padding-bottom: 10px;
+        font-size: 34px;
+    }
+    .ourServiceHead p {
+        width: 100%;
+    }
+    .ourServicesSection .mainBox .servicesBoxes {
+        width: 50%;
+    }
+    .ourServicesSection .mainBox .servicesBoxes p {
+        width: 90%;
+    }
+    .highLightSection .leftBox h2,
+    .highLightSection .leftBox p {
+        width: 80%;
+    }
+    .footerLogo {
+        width: 40%;
+    }
+    .socialLinks {
+        width: 100%;
+        padding-top: 30px;
+    }
+    .footerLogo p {
+        width: 90%;
+    }
+    .middleBox {
+        width: 60%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .imageWithTextBox .marginBox .imageBox,
+    .imageWithTextBox .marginBox .contentBox {
+        width: 100%;
+    }
+    .ourServicesSection .mainBox .servicesBoxes,
+    .ourServicesSection .mainBox .servicesBoxes p,
+    .priceBoxSection .priceBox,
+    .mainFeedBackBox .boxes,
+    .highLightSection .leftBox h2,
+    .highLightSection .leftBox p,
+    .footerLogo,
+    .footerLogo p,
+    .middleBox {
+        width: 100%;
+    }
+    .pricingSection>h2 {
+        font-size: 32px;
+    }
+    .footerLogo {
+        padding-bottom: 20px;
+    }
+    .highLightSection .rightBox {
+        top: 85%;
+        left: 50%;
+        transform: translate(-85%, -50%);
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .customerFeedBackSection .heading p {
+        width: 100%;
+    }
+    .highLightSection .leftBox h2,
+    .highLightSection .leftBox p {
+        font-size: 28px;
+    }
+    .highLightSection .leftBox p {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 475px) {
+    .ourServiceHead h2,
+    .pricingSection>h2 {
+        font-size: 28px;
+    }
+    .ourServiceHead p {
+        font-size: 16px;
+    }
+    .priceBox .priceMarginBox ul {
+        padding: 20px;
+    }
+    .customerFeedBackSection {
+        padding: 20px 0;
+    }
+    .customerFeedBackSection .heading h2 {
+        font-size: 28px;
+        font-weight: 600;
+    }
+    .imageWithTextBox .marginBox .imageBox img {
+        padding: 20px 0;
+    }
+    .priceBox .priceMarginBox .priceHead h2 {
+        font-size: 18px;
+    }
+    .priceBox .priceMarginBox .priceHead p {
+        font-size: 16px;
+    }
+    .selectPlanSection h2 {
+        font-size: 24px;
+    }
+    .middleBox {
+        flex-wrap: wrap;
+        justify-content: start;
+    }
+    .middleBox ul {
+        width: 50%;
+        margin-bottom: 10px;
+    }
+}
